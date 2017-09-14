@@ -30,7 +30,6 @@ test:
   imports:
     - wheel
     - wheel.signatures
-    - wheel.test
     - wheel.tool
 
   commands:
