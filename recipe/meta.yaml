@@ -16,7 +16,7 @@ build:
   python: noarch
   script: python setup.py install --single-version-externally-managed --record=record.txt
   entry_points:
-    - wheel=wheel.tool:main
+    - wheel = wheel.tool:main
 
 requirements:
   build:
@@ -32,6 +32,7 @@ test:
     - wheel
     - wheel.signatures
     - wheel.tool
+    - wheel.test
 
   commands:
     - wheel --help
