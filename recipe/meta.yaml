@@ -32,7 +32,6 @@ test:
     - wheel
     - wheel.signatures
     - wheel.tool
-    - wheel.test
 
   commands:
     - wheel --help
