@@ -14,14 +14,16 @@ Summary: A built-package format for Python.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/wheel-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/wheel-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/wheel-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/wheel-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/wheel-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/wheel-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/wheel-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/wheel-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/wheel-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/wheel-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/wheel-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/wheel-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/wheel/badges/version.svg)](https://anaconda.org/conda-forge/wheel)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/wheel/badges/downloads.svg)](https://anaconda.org/conda-forge/wheel)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-wheel-green.svg)](https://anaconda.org/conda-forge/wheel) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/wheel.svg)](https://anaconda.org/conda-forge/wheel) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/wheel.svg)](https://anaconda.org/conda-forge/wheel) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/wheel.svg)](https://anaconda.org/conda-forge/wheel) |
 
 Installing wheel
 ================
