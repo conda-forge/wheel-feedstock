@@ -1,7 +1,7 @@
 About wheel
 ===========
 
-Home: https://bitbucket.org/pypa/wheel/
+Home: https://github.com/pypa/wheel
 
 Package license: MIT
 
