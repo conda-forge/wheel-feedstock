@@ -77,3 +77,4 @@ workflows:
       - build_osx_python2.7
       - build_osx_python3.6
       - build_osx_python3.7
+      - build_osx_python3.8
