@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - python
-    - setuptools
+    - setuptools_scm >=3.4
   run:
     - python
     - setuptools
