@@ -1,4 +1,4 @@
-{% set version = "0.33.6" %}
+{% set version = "0.34.0" %}
 
 package:
   name: wheel
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/w/wheel/wheel-{{ version }}.tar.gz
-  sha256: 10c9da68765315ed98850f8e048347c3eb06dd81822dc2ab1d4fde9dc9702646
+  sha256: a69231973dccde8558f80f2ef058335a1d0bc1b55b2a5a2dfb5097e151e3c498
 
 build:
   number: 0
@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - python
-    - setuptools
+    - setuptools_scm >=3.4
   run:
     - python
     - setuptools
