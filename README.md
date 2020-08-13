@@ -5,7 +5,7 @@ Home: https://github.com/pypa/wheel
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A built-package format for Python.
 
