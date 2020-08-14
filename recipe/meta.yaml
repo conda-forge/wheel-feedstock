@@ -1,4 +1,4 @@
-{% set version = "0.34.2" %}
+{% set version = "0.35.1" %}
 
 package:
   name: wheel
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/w/wheel/wheel-{{ version }}.tar.gz
-  sha256: 8788e9155fe14f54164c1b9eb0a319d98ef02c160725587ad60f14ddc57b6f96
+  sha256: 99a22d87add3f634ff917310a3d87e499f19e663413a52eb9232c447aa646c9f
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
   entry_points:
     - wheel = wheel.cli:main
