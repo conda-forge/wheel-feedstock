@@ -23,7 +23,6 @@ requirements:
     - toml
   run:
     - python
-    - packaging >=20.2
 
 test:
   imports:
