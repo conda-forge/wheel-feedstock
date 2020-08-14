@@ -18,10 +18,12 @@ build:
 requirements:
   host:
     - python
+    - setuptools >=42
     - setuptools_scm >=3.4
+    - toml
   run:
     - python
-    - setuptools
+    - packaging >=20.2
 
 test:
   imports:
