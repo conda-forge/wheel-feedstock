@@ -10,15 +10,15 @@ source:
 
 build:
   noarch: python
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 1
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - wheel = wheel.cli:main
 
 requirements:
   host:
     - python >=3.7
-    - setuptools >=45.2.0
+    - flit >=3.8
   run:
     - python >=3.7
 
