@@ -11,15 +11,15 @@ source:
 build:
   noarch: python
   number: 1
-  script: {{ PYTHON }} -c "import flit_core.buildapi; flit_core.build_api.build_wheel('.')" && {{ PYTHON }} -m installer wheel-*.whl
+  script: {{ PYTHON }} -c "import flit_core.buildapi; flit_core.buildapi.build_wheel('.')" && {{ PYTHON }} -m installer wheel-*.whl
   entry_points:
     - wheel = wheel.cli:main
 
 requirements:
   host:
+    - flit-core
     - python >=3.7
     - python-installer
-    - flit-core
   run:
     - python >=3.7
 
