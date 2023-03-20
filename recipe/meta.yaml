@@ -11,15 +11,14 @@ source:
 build:
   noarch: python
   number: 1
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m flit install --deps none
   entry_points:
     - wheel = wheel.cli:main
 
 requirements:
   host:
     - python >=3.7
-    - flit-core >=3.8
-    - pip
+    - flit
   run:
     - python >=3.7
 
