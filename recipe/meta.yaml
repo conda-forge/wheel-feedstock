@@ -11,7 +11,7 @@ source:
 build:
   noarch: python
   number: 1
-  script: {{ PYTHON }} -c "import flit_core.buildapi; flit_core.buildapi.build_wheel('.')" && {{ PYTHON }} -m installer wheel-*.whl
+  script: {{ PYTHON }} -c "import flit_core.buildapi; flit_core.buildapi.build_wheel('.')" && {{ PYTHON }} -m installer wheel-*.whl && ls -Rl $(python -c 'import sysconfig; print(sysconfig.get_paths()["purelib"])')/wheel
   entry_points:
     - wheel = wheel.cli:main
 
