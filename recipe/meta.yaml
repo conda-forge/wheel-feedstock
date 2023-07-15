@@ -10,15 +10,16 @@ source:
 
 build:
   noarch: python
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 1
+  script: {{ PYTHON }} -c "import flit_core.buildapi; flit_core.buildapi.build_wheel('.')" && {{ PYTHON }} -m installer --no-compile-bytecode wheel-*.whl
   entry_points:
     - wheel = wheel.cli:main
 
 requirements:
   host:
+    - flit-core
     - python >=3.7
-    - setuptools >=45.2.0
+    - python-installer
   run:
     - python >=3.7
 
