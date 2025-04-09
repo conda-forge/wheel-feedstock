@@ -26,7 +26,6 @@ requirements:
 test:
   imports:
     - wheel
-    - wheel.cli
   commands:
     - pip check
     - wheel --help
