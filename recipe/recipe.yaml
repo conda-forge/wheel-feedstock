@@ -32,6 +32,7 @@ tests:
       imports:
         - wheel
         - wheel.cli
+      python_version: ${{ python_min }}.*
   - script:
       - wheel --help
 
