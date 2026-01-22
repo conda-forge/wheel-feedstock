@@ -13,20 +13,20 @@ build:
   number: 0
   script: {{ PYTHON }} -c "import flit_core.buildapi; flit_core.buildapi.build_wheel('.')" && {{ PYTHON }} -m installer --no-compile-bytecode wheel-*.whl
   entry_points:
-    - wheel = wheel.cli:main
+    - wheel = wheel._commands:main
 
 requirements:
   host:
-    - flit-core
     - python {{ python_min }}
+    - flit-core >=3.11,<4
     - python-installer
   run:
     - python >={{ python_min }}
+    - packaging >=24.0
 
 test:
   imports:
     - wheel
-    - wheel.cli
   commands:
     - pip check
     - wheel --help
